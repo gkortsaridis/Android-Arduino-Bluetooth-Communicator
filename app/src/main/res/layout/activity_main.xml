@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UOWM - 3D Led Cube"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/uowm"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/icte" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button android:id="@+id/zeroBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Leds Off" android:onClick="zero" />
+            <Button android:id="@+id/oneBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Leds On" android:onClick="one" />
+            <Button android:id="@+id/twoBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="125 Run" android:onClick="two" />
+            <Button android:id="@+id/threeBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Column Wars" android:onClick="three" />
+            <Button android:id="@+id/fourBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Random Party" android:onClick="four" />
+            <Button android:id="@+id/fiveBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Reflective S.O.S" android:onClick="five" />
+            <Button android:id="@+id/sixBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1 Frame Animation" android:onClick="six" />
+            <Button android:id="@+id/sevenBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Full animation" android:onClick="seven" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
